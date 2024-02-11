@@ -98,11 +98,11 @@ function chooseHole(holes) {
 function gameOver() {
   // TODO: Write your code here
   if (time > 0) {
-    showUp;
-    return showUp();
+    timeoutId = showUp();
+    return timeoutId;
   } else {
-    stopGame;
-    return stopGame();
+    gameStopped = stopGame();
+    return gameStopped;
   }
 }
 
@@ -222,8 +222,8 @@ function startTimer() {
 function whack(event) {
   // TODO: Write your code here.
   // call updateScore()
-  points = updateScore();
-  return points;
+  updateScore();
+  //return points;
 }
 
 /**
@@ -260,6 +260,7 @@ function setDuration(duration) {
 function stopGame() {
   // stopAudio(song);  //optional
   clearInterval(timer);
+
   return "game stopped";
 }
 
@@ -270,6 +271,8 @@ function stopGame() {
  *
  */
 function startGame() {
+  //clear score for if player is playing again
+  clearScore();
   setDuration(10);
   showUp();
   setEventListeners();
