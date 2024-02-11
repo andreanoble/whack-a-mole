@@ -223,7 +223,7 @@ function whack(event) {
   // TODO: Write your code here.
   // call updateScore()
   updateScore();
-  //return points;
+  return points;
 }
 
 /**
