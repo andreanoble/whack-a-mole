@@ -1,5 +1,5 @@
 html {
-  /*background: url('./assets/background.png') no-repeat center center fixed;*/
+  /*background: url('../assets/ninjabackground.png') no-repeat center center fixed;*/
   background: url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/background.png?raw=true') no-repeat center center fixed;
   box-sizing: border-box;
   -webkit-background-size: cover;
@@ -51,20 +51,20 @@ h2 {
 
 .hole:after {
   display: block;
-  /*background: url("./assets/hole.png") bottom center no-repeat;*/
-  background: url("https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/hole.png?raw=true") bottom center no-repeat;
+  background: url("../assets/car.png") bottom center no-repeat;
+  /*background: url("https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/hole.png?raw=true") bottom center no-repeat;*/
   background-size:contain;
   content:'';
   width: 100%;
-  height: 100%;
+  height: 50%;
   position: absolute;
-  bottom: -40%;
+  bottom: -10%;
   z-index: 2;
   pointer-events:none;
 }
 
 .mole {
-  background: url('../assets/ninja.png') bottom center no-repeat;
+  background: url('../assets/clown.png') bottom center no-repeat;
   /*background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;*/
   background-size: 40%;
   position: absolute;
